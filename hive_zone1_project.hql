@@ -1,0 +1,5 @@
+CREATE EXTERNAL TABLE if not exists ${hiveconf:TABLE_NAME} (ID INT, name STRING, deg STRING, salary INT, dept STRING,updated_at STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LOCATION '${hiveconf:TARGET_DIR}';
+
+
+
+
